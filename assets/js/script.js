@@ -4,11 +4,17 @@
 $(document).ready(() => {
     $(".button-collapse").sideNav({ menuWidth: 220 });
     $(".modal").modal();
+    $(".parallax").parallax();
 });
-$(".parallax").parallax();
-$("a[href*=\"#\"]").not("[href=\"#\"]").not("[href=\"#0\"]").click(onClick);
 
-function onClick(event) {
+$(".parallax").parallax();
+
+$("a[href*=\"#\"]")
+    .not("[href=\"#\"]")
+    .not("[href=\"#0\"]")
+    .click(smoothscroll);
+
+function smoothscroll(event) {
     if (location.pathname.replace(/^\//, "") === this.pathname.replace(/^\//, "") && location.hostname === this.hostname) {
         var target = $(this.hash);
         target = target.length ? target : $(`[name=${this.hash.slice(1)}]`);
