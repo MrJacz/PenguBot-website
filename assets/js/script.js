@@ -4,9 +4,8 @@
 $(document).ready(() => {
     $(".button-collapse").sideNav({ menuWidth: 220 });
     $(".modal").modal();
-    $(".parallax").parallax();
 });
-
+$(".parallax").parallax();
 $("a[href*=\"#\"]").not("[href=\"#\"]").not("[href=\"#0\"]").click(onClick);
 
 function onClick(event) {
