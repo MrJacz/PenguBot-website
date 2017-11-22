@@ -1,0 +1,15 @@
+{
+  "name": "pengubot-website",
+  "version": "0.0.1",
+  "description": "PenguBot's Official Website | Designed By: www.adityatd.me | Backend By: jaczaus.me",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js"
+  },
+  "author": "Jacz & AdityaTD",
+  "license": "MIT",
+  "dependencies": {
+    "ejs": "^2.5.7",
+    "express": "^4.16.2"
+  }
+}
