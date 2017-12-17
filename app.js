@@ -25,4 +25,12 @@ app.get("/support", (req, res) => {
     res.redirect("https://discord.gg/NQCTdEc");
 });
 
+app.get("/aditya", (req, res) => {
+    res.redirect("https://www.adityatd.me")
+});
+
+app.get("/jacz", (req, res) => {
+    res.redirect("http://jaczaus.me")
+});
+
 app.listen(4321, () => console.log(`PenguBot website running on port 4321.`));
