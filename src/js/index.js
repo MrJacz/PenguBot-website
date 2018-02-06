@@ -7,8 +7,6 @@ $(document).ready(() => {
     $(".parallax").parallax();
 });
 
-$(".parallax").parallax();
-
 $("a[href*=\"#\"]")
     .not("[href=\"#\"]")
     .not("[href=\"#0\"]")

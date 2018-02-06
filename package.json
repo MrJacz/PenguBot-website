@@ -10,7 +10,8 @@
   "license": "UNLICENSED",
   "dependencies": {
     "ejs": "^2.5.7",
-    "express": "^4.16.2"
+    "express": "^4.16.2",
+    "snekfetch": "^3.6.4"
   },
   "private": true
 }
