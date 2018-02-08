@@ -60,3 +60,6 @@ typings/
 # Custom
 package-lock.json
 build
+src/css/*.css
+src/fonts/*
+src/js/*.min.js
