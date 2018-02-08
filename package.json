@@ -19,6 +19,9 @@
   "homepage": "https://github.com/PenguBot/website#readme",
   "devDependencies": {
     "browser-sync": "^2.23.6",
+    "eslint": "^4.17.0",
+    "eslint-plugin-node": "^6.0.0",
+    "eslint-plugin-promise": "^3.6.0",
     "gulp": "^3.9.1",
     "gulp-babel": "^7.0.1",
     "gulp-clean-css": "^3.9.2",
