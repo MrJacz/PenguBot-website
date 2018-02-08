@@ -26,7 +26,7 @@
 </head>
 
 <body>
-  <nav class="navbar is-transparent">
+  <nav class="navbar is-transparent mb-3">
     <div class="container">
       <div class="navbar-brand">
         <a class="navbar-item brand-text" href="/">
@@ -54,7 +54,43 @@
       </div>
     </div>
   </nav>
-
+  <div class="container">
+    <!-- Stats -->
+    <section class="info-tiles">
+      <div class="tile is-ancestor has-text-centered">
+        <div class="tile is-parent">
+          <article class="tile is-child box">
+            <p id="guildCount" class="title">0</p>
+            <p class="subtitle">Guilds</p>
+          </article>
+        </div>
+        <div class="tile is-parent">
+          <article class="tile is-child box">
+            <p id="channelCount" class="title">0</p>
+            <p class="subtitle">Channels</p>
+          </article>
+        </div>
+        <div class="tile is-parent">
+          <article class="tile is-child box">
+            <p id="userCount" class="title">0</p>
+            <p class="subtitle">Users</p>
+          </article>
+        </div>
+        <div class="tile is-parent">
+          <article class="tile is-child box">
+            <p id="memoryCount" class="title">0 MB</p>
+            <p class="subtitle">Memory</p>
+          </article>
+        </div>
+        <div class="tile is-parent">
+          <article class="tile is-child box">
+            <p id="voiceCount" class="title">0</p>
+            <p class="subtitle">Voice</p>
+          </article>
+        </div>
+      </div>
+    </section>
+  </div>
   <!-- Footer -->
   <footer class="footer">
     <div class="container">
@@ -66,7 +102,7 @@
     </div>
   </footer>
   <script src="js/jquery.min.js"></script>
-  <script src="js/main.js"></script>
+  <script src="js/stats.js"></script>
 </body>
 
 </html>
