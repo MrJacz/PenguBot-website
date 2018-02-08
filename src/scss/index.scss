@@ -1,0 +1,39 @@
+$background-color: #ECF0F3;
+
+body,
+html {
+  background: $background-color;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+img {
+  pointer-events: none;
+}
+
+/* Scroll bar */
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: rgb(25, 118, 210);
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: black;
+}
+
+::-webkit-scrollbar-button {
+  height: 0px;
+  background-color: rgb(25, 118, 210);
+}
+
+::-webkit-scrollbar-corner {
+  background-color: black;
+}

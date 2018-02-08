@@ -1,17 +1,45 @@
 {
-  "name": "pengubot-website",
+  "name": "pengu-site",
   "version": "0.0.1",
-  "description": "PenguBot's Official Website | Designed By: www.adityatd.me | Backend By: jaczaus.me",
+  "description": "PenguBot website | Created and Maintained by Jacz",
   "main": "app.js",
   "scripts": {
-    "start": "node app.js"
+    "css-deploy": "npm run css-build && npm run css-postcss",
+    "css-build": "node-sass sass/main.scss dist/css/main.css",
+    "css-postcss": "postcss --use autoprefixer --output dist/css/main.css dist/css/main.css",
+    "css-watch": "npm run css-build -- --watch",
+    "deploy": "npm run lint:fix && npm run css-deploy && npm run js-build",
+    "js-build": "babel js --out-dir dist/js",
+    "js-watch": "npm run js-build -- --watch",
+    "lint": "eslint .",
+    "lint:fix": "eslint --fix .",
+    "start": "npm run css-watch | npm run js-watch"
   },
-  "author": "Jacz & AdityaTD",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/PenguBot/website.git"
+  },
+  "author": "Jacz",
   "license": "UNLICENSED",
-  "dependencies": {
-    "ejs": "^2.5.7",
-    "express": "^4.16.2",
-    "snekfetch": "^3.6.4"
+  "bugs": {
+    "url": "https://github.com/PenguBot/website/issues"
   },
-  "private": true
+  "homepage": "https://github.com/PenguBot/website#readme",
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-core": "^6.26.0",
+    "babel-preset-es2015": "^6.24.1",
+    "browser-sync": "^2.23.6",
+    "gulp": "^3.9.1",
+    "gulp-babel": "^7.0.1",
+    "gulp-clean-css": "^3.9.2",
+    "gulp-rename": "^1.2.2",
+    "gulp-sass": "^3.1.0",
+    "gulp-uglify-es": "^1.0.0"
+  },
+  "dependencies": {
+    "bulma": "^0.6.2",
+    "font-awesome": "^4.7.0",
+    "jquery": "^3.3.1"
+  }
 }
