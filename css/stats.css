@@ -11,9 +11,9 @@ html {
 img {
   pointer-events: none; }
 
-.shard-columns {
+.container-grid {
   display: grid;
-  grid-template-columns: repeat(4, minmax(min-content, 180px));
+  grid-template-columns: repeat(4, minmax(100px, 1fr));
   grid-gap: 10px; }
 
 /* Helpers */
