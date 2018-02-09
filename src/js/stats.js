@@ -5,7 +5,7 @@ $().ready(() => {
     setInterval(stats, 60000);
 });
 
-function listShards() {
+function listShards() { // eslint-disable-line
     $.get("https://api.pengubot.com/stats/shards").done(shards => {
         for (const id in shards) {
             const shard = shards[id];
