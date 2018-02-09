@@ -11,6 +11,14 @@ html {
 img {
   pointer-events: none; }
 
+.shard-column {
+  grid-template-columns: repeat(4, minmax(min-content, 180px));
+  grid-gap: 10px; }
+
+.container-grid {
+  display: grid; }
+
+/* Helpers */
 .mb-1 {
   margin-bottom: 1rem !important; }
 

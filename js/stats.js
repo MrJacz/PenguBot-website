@@ -1,15 +1,15 @@
 $().ready(() => {
     toggleBurger();
     stats();
-    // listShards();
+    listShards();
     setInterval(stats, 60000);
 });
 
-function listShards() { // eslint-disable-line
+function listShards() {
     $.get("https://api.pengubot.com/stats/shards").done(shards => {
         for (const id in shards) {
             const shard = shards[id];
-            $("#shardColumn").append(`
+            $("#shardColumns").append(`
         <div class="card">
         <header class="card-header">
           <p class="card-header-title"> ${id.replace("shard_", "Shard ")} </p>
