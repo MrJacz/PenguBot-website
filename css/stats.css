@@ -12,7 +12,7 @@ img {
   pointer-events: none; }
 
 .container-grid {
-  display: grid;
+  display: grid !important;
   grid-template-columns: repeat(4, minmax(100px, 1fr));
   grid-gap: 10px; }
 
