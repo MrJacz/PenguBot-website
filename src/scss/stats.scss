@@ -1,3 +1,5 @@
+@import "helpers.scss";
+@import "scrollbar.scss";
 $background-color: #ECF0F3;
 body,
 html {
@@ -21,39 +23,16 @@ img {
   justify-content: center;
 }
 
-/* Helpers */
-
-.mb-1 {
-  margin-bottom: 1rem !important;
+hr {
+  background-color: $background-color;
+  border: none;
+  display: block;
+  height: 1px;
+  margin: 1.5rem 0;
+  padding: 0;
 }
 
-.mb-2 {
-  margin-bottom: 2rem !important;
-}
-
-.mb-3 {
-  margin-bottom: 3rem !important;
-}
-
-/* Scroll bar */
-
-::-webkit-scrollbar {
-  width: 8px;
-}
-
-::-webkit-scrollbar-track {
-  background-color: rgb(25, 118, 210);
-}
-
-::-webkit-scrollbar-thumb {
-  background-color: black;
-}
-
-::-webkit-scrollbar-button {
-  height: 0px;
-  background-color: rgb(25, 118, 210);
-}
-
-::-webkit-scrollbar-corner {
-  background-color: black;
+.title {
+  align-content: center;
+  text-align: center;
 }

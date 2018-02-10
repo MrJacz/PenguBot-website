@@ -1,5 +1,6 @@
+@import "helpers.scss";
+@import "scrollbar.scss";
 $background-color: #ECF0F3;
-
 body,
 html {
   background: $background-color;
@@ -13,39 +14,4 @@ html {
 
 img {
   pointer-events: none;
-}
-
-.mb-1 {
-  margin-bottom: 1rem !important;
-}
-
-.mb-2 {
-  margin-bottom: 2rem !important;
-}
-
-.mb-3 {
-  margin-bottom: 3rem !important;
-}
-
-/* Scroll bar */
-
-::-webkit-scrollbar {
-  width: 8px;
-}
-
-::-webkit-scrollbar-track {
-  background-color: rgb(25, 118, 210);
-}
-
-::-webkit-scrollbar-thumb {
-  background-color: black;
-}
-
-::-webkit-scrollbar-button {
-  height: 0px;
-  background-color: rgb(25, 118, 210);
-}
-
-::-webkit-scrollbar-corner {
-  background-color: black;
 }
