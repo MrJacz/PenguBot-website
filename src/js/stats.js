@@ -13,7 +13,7 @@ function stats() {
         $("#memoryCount").text(`${data.memory.toFixed(2)} MB`);
         $("#voiceCount").text(data.vcs.toLocaleString());
         $("#cmdCount").text(data.cmdRun);
-
+        $("#shardColumns").html("");
         for (let i = 0; i < data.shards.length; i++) {
             const shard = data.shards[i];
             $("#shardColumns").append(`
