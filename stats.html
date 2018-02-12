@@ -56,57 +56,59 @@
   </nav>
   <div class="container">
     <!-- Stats -->
-    <section class="section mb-3">
-      <h1 class="title"> Total Stats </h1>
-      <hr>
-      <div class="info-tiles">
-        <div class="tile is-ancestor has-text-centered">
-          <div class="tile is-parent">
-            <article class="tile is-child box">
-              <p id="guildCount" class="title">0</p>
-              <p class="subtitle">Guilds</p>
-            </article>
-          </div>
-          <div class="tile is-parent">
-            <article class="tile is-child box">
-              <p id="channelCount" class="title">0</p>
-              <p class="subtitle">Channels</p>
-            </article>
-          </div>
-          <div class="tile is-parent">
-            <article class="tile is-child box">
-              <p id="userCount" class="title">0</p>
-              <p class="subtitle">Users</p>
-            </article>
-          </div>
-          <div class="tile is-parent">
-            <article class="tile is-child box">
-              <p id="memoryCount" class="title">0 MB</p>
-              <p class="subtitle">Memory</p>
-            </article>
-          </div>
-          <div class="tile is-parent">
-            <article class="tile is-child box">
-              <p id="voiceCount" class="title">0</p>
-              <p class="subtitle">Voice Connections</p>
-            </article>
-          </div>
-          <div class="tile is-parent">
+    <div id="allStats">
+      <section id="stats" class="section mb-3">
+        <h1 class="title"> Total Stats </h1>
+        <hr>
+        <div class="info-tiles">
+          <div class="tile is-ancestor has-text-centered">
+            <div class="tile is-parent">
+              <article class="tile is-child box">
+                <p id="guildCount" class="title">0</p>
+                <p class="subtitle">Guilds</p>
+              </article>
+            </div>
+            <div class="tile is-parent">
+              <article class="tile is-child box">
+                <p id="channelCount" class="title">0</p>
+                <p class="subtitle">Channels</p>
+              </article>
+            </div>
+            <div class="tile is-parent">
+              <article class="tile is-child box">
+                <p id="userCount" class="title">0</p>
+                <p class="subtitle">Users</p>
+              </article>
+            </div>
+            <div class="tile is-parent">
+              <article class="tile is-child box">
+                <p id="memoryCount" class="title">0 MB</p>
+                <p class="subtitle">Memory</p>
+              </article>
+            </div>
+            <div class="tile is-parent">
+              <article class="tile is-child box">
+                <p id="voiceCount" class="title">0</p>
+                <p class="subtitle">Voice Connections</p>
+              </article>
+            </div>
+            <div class="tile is-parent">
               <article class="tile is-child box">
                 <p id="cmdCount" class="title">0</p>
                 <p class="subtitle">Commands Ran</p>
               </article>
             </div>
+          </div>
         </div>
-      </div>
-    </section>
-    <!-- Shards -->
-    <section class="section" id="shards">
-      <h1 class="title"> Shard Stats </h1>
-      <hr>
-      <div id="shardColumns" class="columns container-grid">
-      </div>
-    </section>
+      </section>
+      <!-- Shards -->
+      <section class="section" id="shards">
+        <h1 class="title"> Shard Stats </h1>
+        <hr>
+        <div id="shardColumns" class="columns container-grid">
+        </div>
+      </section>
+    </div>
   </div>
   <!-- Footer -->
   <footer class="footer mt-3">
