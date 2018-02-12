@@ -1,6 +1,4 @@
-@import "helpers.scss";
-@import "scrollbar.scss";
-$background-color: #ECF0F3;
+@import "variables.scss";
 body,
 html {
   background: $background-color;
@@ -36,3 +34,6 @@ hr {
   align-content: center;
   text-align: center;
 }
+
+@import "helpers.scss";
+@import "scrollbar.scss";
